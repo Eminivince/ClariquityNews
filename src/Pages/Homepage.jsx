@@ -107,13 +107,13 @@ const Homepage = () => {
                 <h1 className="bg-[#FFD700] p-3 font-bold">TRAVEL</h1>
 
             </div>
-            <div className="flex flex-col md:flex-row space-y-10 md:space-x-8 col-span-4">
+            <div className="flex flex-col md:flex-row space-y-10 md:space-x-8 col-span-4 mb-10">
             {NewsData.map((newsItem) => {
               return (
                 <div className="border-1 border-black">
                   <div>
                     <div
-                      className="h-[50vh] relative"
+                      className="md:h-[50vh] h-[30vh] relative"
                       onMouseEnter={changeColorToRed}
                       onMouseOut={changeColorToBlack}
                       
@@ -148,9 +148,9 @@ const Homepage = () => {
             </div>
             
           </div>
-          <div className="col-span-2 bg-red-500">HI</div>
+          <div className="col-span-2 bg-red-500 text-center">AD</div>
         </div>
-        <div className="md:grid md:grid-cols-6 mt-6 md:px-20 gap-12">
+        <div className="md:grid md:grid-cols-6 md:mt-6 md:px-20 px-5 gap-12 mt-10">
           <div className="flex flex-col col-span-4">
             <div className="mb-3">
                 <h1 className="bg-red-600 text-white p-3 font-bold">TRAVEL</h1>
@@ -162,7 +162,7 @@ const Homepage = () => {
                 <div className="border-1 border-black">
                   <div>
                     <div
-                      className="h-[50vh] relative"
+                      className="md:h-[50vh] h-[30vh] relative"
                       onMouseEnter={changeColorToRed}
                       onMouseOut={changeColorToBlack}
                       
