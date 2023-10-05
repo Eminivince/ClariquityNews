@@ -23,21 +23,21 @@ const Homepage = () => {
       <Navbar />
       <div className="mt-20">
       <AdBoard />
-      <div className="md:flex grid grid-cols-2 gap-2 md:space-x-5 mt-8 md:px-20">
-        {NewsData.map((newsItem) => {
+      <div className="md:flex grid grid-cols-2 gap-1 md:space-x-5 mt-8 md:px-20">
+        {NewsData.map((newsItem, index) => {
           return (
-            <div className="border-1 border-black">
-              <div className="relative h-[70vh]">
+            <div className={`${index == 0 ? "col-span-2" : "col-span-1"} border-1 border-black `}>
+              <div className="relative md:h-[70vh] h-[30vh]">
                 <img
                   src={newsItem.image}
                   alt="newsImage"
-                  className="object-cover h-[100%] w-[100%] opacity-80 hover:cursor-pointer hover:scale-105 hover:opacity-100 duration-500"
+                  className="object-cover h-[100%] w-[100%] opacity-90 hover:cursor-pointer hover:scale-105 hover:opacity-100 duration-500"
                 />
-                <div className="absolute bottom-12 left-8 space-y-2">
-                  <h1 className="bg-red-600 w-fit p-1 text-white font-semibold px-4">
+                <div className="absolute md:bottom-12 bottom-3 md:left-8 left-3 space-y-2">
+                  <h1 className="bg-red-500 w-fit p-1 text-white font-semibold px-4">
                     {newsItem.Category}
                   </h1>
-                  <h1 className="text-4xl font-bold text-white">
+                  <h1 className="md:text-4xl font-bold text-white">
                     {newsItem.Title}
                   </h1>
                   <div className="flex space-x-3 text-white font-semibold">
