@@ -28,36 +28,7 @@ const Homepage = (props) => {
 
 
         
-    // headlines.map((newsItem, index) => {
-    //   return (
-    //     <div className={`${index == 0 ? "col-span-2" : "col-span-1"} border-1 border-black `}>
-    //       <div className="relative md:h-[70vh] h-[30vh]">
-    //         <img
-    //           src={urlToImage}
-    //           alt="newsImage"
-    //           className="object-cover h-[100%] w-[100%] opacity-90 hover:cursor-pointer hover:scale-105 hover:opacity-100 duration-500"
-    //         />
-    //         <div className="absolute md:bottom-12 bottom-3 md:left-8 left-3 space-y-2">
-    //           <h1 className="bg-red-500 w-fit p-1 text-white font-semibold px-4">
-    //             {newsItem.Category}
-    //           </h1>
-    //           <h1 className="md:text-4xl font-bold text-white">
-    //             {newsItem.title}
-    //           </h1>
-    //           <div className="flex space-x-3 text-white font-semibold">
-    //             <div>{newsItem.author}</div>
-    //             <span>-</span>
-    //             <div>{newsItem.Date}</div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   );
-    // })
-
-  //let headlineNews = dynamicNewData.slice(0, 3)
-
-  //console.log(headlines)
+    
 
 
 

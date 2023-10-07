@@ -39,12 +39,20 @@ function App() {
   }, [])
 
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Homepage newData={newsData} headlines={headLineNews}/>} />
-      <Route path="/news" element={<NewsRender newData={newsData} />} />
-    </Routes>
-  </BrowserRouter>
+    <div>
+
+      {headLineNews.map(value => {
+            
+            return (<div>{value.content}</div>) ;  // You can modify this part based on what you want to do with each item
+          })}
+
+    </div>
+  //   <BrowserRouter>
+  //   <Routes>
+  //     <Route path="/" element={<Homepage newData={newsData} headlines={headLineNews}/>} />
+  //     <Route path="/news" element={<NewsRender newData={newsData} />} />
+  //   </Routes>
+  // </BrowserRouter>
   )
 }
 
