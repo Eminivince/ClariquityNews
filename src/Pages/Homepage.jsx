@@ -21,7 +21,7 @@ const Homepage = (props) => {
 
     
      headlines ? headlines.map(value => {
-            console.log(value.content) ;  // You can modify this part based on what you want to do with each item
+            console.log(value.description) ;  // You can modify this part based on what you want to do with each item
           }) : ""
    
     
@@ -56,13 +56,13 @@ const Homepage = (props) => {
                   <div className={`${index == 0 ? "col-span-2" : "col-span-1"} border-1 border-black `}>
                     <div className="relative md:h-[70vh] h-[30vh]">
                       <img
-                        src={newsItem.urlToImage}
+                        src={newsItem.image}
                         alt="newsImage"
                         className="object-cover h-[100%] w-[100%] opacity-90 hover:cursor-pointer hover:scale-105 hover:opacity-100 duration-500"
                       />
                       <div className="absolute md:bottom-12 bottom-3 md:left-8 left-3 space-y-2">
                         <h1 className="bg-red-500 w-fit p-1 text-white font-semibold px-4">
-                          {newsItem.Category}
+                          {newsItem.category}
                         </h1>
                         <h1 className="md:text-4xl font-bold text-white">
                           {newsItem.title}
@@ -70,7 +70,7 @@ const Homepage = (props) => {
                         <div className="flex space-x-3 text-white font-semibold">
                           <div>{newsItem.author}</div>
                           <span>-</span>
-                          <div>{newsItem.publishedAt}</div>
+                          <div>{newsItem.published_at}</div>
                         </div>
                       </div>
                     </div>
@@ -99,12 +99,12 @@ const Homepage = (props) => {
                   <div>
                     <div className="md:h-[50vh] h-[30vh] relative">
                       <img
-                        src={newsItem.urlToImage}
+                        src={newsItem.image}
                         alt="newsImage"
                         className="object-cover h-[100%] w-[100%]  hover:cursor-pointer hover:opacity-80 duration-300"
                       />
                       <h1 className="bg-black w-fit p-1 text-white font-semibold px-4 absolute bottom-0">
-                        {newsItem.Category}
+                        {newsItem.category}
                       </h1>
                     </div>
 
@@ -115,11 +115,11 @@ const Homepage = (props) => {
                       <div className="flex space-x-3 text-black font-semibold">
                         <div className="text-red-500"> {newsItem.author}</div>
                         <span>-</span>
-                        <div>{newsItem.publishedAt}</div>
+                        <div>{newsItem.published_at}</div>
                       </div>
                       <h1>{
                       
-                      `${newsItem.content}`}</h1>
+                      `${newsItem.description}`}</h1>
                     </div>
                   </div>
                 </div>
@@ -152,14 +152,14 @@ const Homepage = (props) => {
                       
                     >
                       <img
-                        src={newsItem.urlToImage}
+                        src={newsItem.image}
                         alt="newsImage"
                         className="object-cover h-[100%] w-[100%] hover:cursor-pointer hover:opacity-80 duration-300"
                       />
                       <h1
                         className={`${color} w-fit p-1 text-white font-semibold px-4 absolute bottom-0`}
                       >
-                        {newsItem.Category}
+                        {newsItem.category}
                       </h1>
                     </div>
 
@@ -170,9 +170,9 @@ const Homepage = (props) => {
                       <div className="flex space-x-3 text-black font-semibold">
                         <div>{newsItem.author}</div>
                         <span>-</span>
-                        <div>{newsItem.publishedAt}</div>
+                        <div>{newsItem.published_at}</div>
                       </div>
-                      <h1>{`${newsItem.content}...`}</h1>
+                      <h1>{`${newsItem.description}...`}</h1>
                     </div>
                   </div>
                 </div>
@@ -201,14 +201,14 @@ const Homepage = (props) => {
                       
                     >
                       <img
-                        src={newsItem.urlToImage}
+                        src={newsItem.image}
                         alt="newsImage"
                         className="object-cover h-[100%] w-[100%]  hover:cursor-pointer hover:opacity-80 duration-300"
                       />
                       <h1
                         className={`${color} w-fit p-1 text-white font-semibold px-4 absolute bottom-0`}
                       >
-                        {newsItem.Category}
+                        {newsItem.category}
                       </h1>
                     </div>
 
@@ -217,11 +217,11 @@ const Homepage = (props) => {
                         {newsItem.title}
                       </h1>
                       <div className="flex space-x-3 text-black font-semibold">
-                        <div>{newsItem.Author}</div>
+                        <div>{newsItem.author}</div>
                         <span>-</span>
-                        <div>{newsItem.Date}</div>
+                        <div>{newsItem.published_at}</div>
                       </div>
-                      <h1>{`${newsItem.content}...`}</h1>
+                      <h1>{`${newsItem.description}...`}</h1>
                     </div>
                   </div>
                 </div>
