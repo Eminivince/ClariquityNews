@@ -19,12 +19,12 @@ function App() {
       "https://newsdata.io/api/1/news?apikey=pub_30740a7eed2b2474f460ae171aad0e8f00183&q=pizza";
 
     const url3 =
-    "http://api.mediastack.com/v1/news?access_key=645bd23141cbb81a741dba69aba18e74";
+    "http://api.mediastack.com/v1/news?access_key=159f5841c867914c21883c3c1634864b";
 
     fetch(url3)
       .then(async (response) => {
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          // throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -44,6 +44,7 @@ function App() {
   }, []);
 
   return (
+
     <BrowserRouter>
       <Routes>
         <Route
