@@ -9,6 +9,7 @@ export default [
         Author: "Ayoola Olaoye",
         Date: "May 14, 2023",
         Category: "Travel",
+        urlToImage: "Travel",
         Info: "What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning",
         image: woman
     },
@@ -17,6 +18,7 @@ export default [
         Author: "Ayoola Olaoye",
         Date: "May 14, 2023",
         Category: "Travel",
+        urlToImage: "Travel",
         Info: "What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning",
         image: woman
     },
@@ -25,6 +27,7 @@ export default [
         Author: "Ayoola Olaoye",
         Date: "May 14, 2023",
         Category: "Travel",
+        urlToImage: "Travel",
         Info: "What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning What is the meaning",
         image: football
     },

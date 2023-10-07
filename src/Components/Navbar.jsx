@@ -38,7 +38,7 @@ const Navbar = () => {
             <AiOutlineSearch />
           </i>
         </div>
-        <div onClick={!navbar ? toggleMobileNavOn : ""}>
+        <div onClick={!navbar ? toggleMobileNavOn : ""} className="md:hidden">
             <i className="text-3xl">
             <AiOutlineMenu />
             </i>
