@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import Blacklogo from "../assets/images/blacklogostrip.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -16,7 +17,9 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex justify-between md:px-20 uppercase items-center mb-4 fixed top-0 bg-[#FFD700] w-full h-20 z-50 pr-5">
+        <Link to='/'>
         <img src={Blacklogo} alt="logo" className="w-[150px]" />
+        </Link>
         <ul className="md:flex space-x-12 font-semibold hidden">
           <li className="hover:cursor-pointer hover:text-gray-400">
             <a href="#">CATEGORIES</a>

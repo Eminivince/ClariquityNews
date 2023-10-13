@@ -19,7 +19,7 @@ function App() {
       "https://newsdata.io/api/1/news?apikey=pub_30740a7eed2b2474f460ae171aad0e8f00183&q=pizza";
 
     const url3 =
-    "https://api.mediastack.com/v1/news?access_key=159f5841c867914c21883c3c1634864b";
+    "http://api.mediastack.com/v1/news?access_key=159f5841c867914c21883c3c1634864b";
 
     fetch(url3)
       .then(async (response) => {
@@ -49,9 +49,9 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Homepage newData={newsData} headlines={headLineNews} />}
+          element={<Homepage newData={newsData} headlines={headLineNews} myNewsData={NewsData} />}
         />
-        <Route path="/news" element={<NewsRender newData={newsData} />} />
+        <Route path="/news/:id" element={<NewsRender newData={newsData} myNewsData={NewsData} />} />
       </Routes>
     </BrowserRouter>
   );
