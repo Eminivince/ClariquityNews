@@ -78,7 +78,7 @@ const NewsRender = (props) => {
         </section>
 
         <section className="px-20 grid grid-cols-5 gap-10">
-          <main className="col-span-4 bg-red-400">
+          <main className="col-span-4">
             <div className=" mb-10 text">
               <img src={content.image} alt="" className="w-[100%] h-[100vh]  object-cover" />
             </div>
