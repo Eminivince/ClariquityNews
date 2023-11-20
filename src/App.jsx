@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewsRender from "./Pages/NewsRender";
 import { useEffect } from "react";
 import NewsData from "./assets/images/NewsData";
+import LoginAdmin from "./Pages/LoginAdmin";
+import AdminDashboard from "./Pages/AdminDashboard";
 
 function App() {
   const [newsData, setNewsData] = React.useState(null);
@@ -50,6 +52,14 @@ function App() {
         <Route
           path="/"
           element={<Homepage newData={newsData} headlines={headLineNews} myNewsData={NewsData} />}
+        />
+        <Route
+          path="/adminlogin"
+          element={<LoginAdmin/>}
+        />
+        <Route
+          path="/adminboard"
+          element={<AdminDashboard myNewsData={NewsData}/>}
         />
         <Route path="/news/:id" element={<NewsRender newData={newsData} myNewsData={NewsData} />} />
       </Routes>

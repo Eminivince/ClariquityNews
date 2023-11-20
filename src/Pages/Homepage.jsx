@@ -13,6 +13,27 @@ const Homepage = (props) => {
 
   let myNews = props.myNewsData;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   console.log(myNews);
 
   myNews
@@ -37,6 +58,15 @@ const Homepage = (props) => {
         <div>
           <Navbar />
           <div className="mt-20">
+
+
+
+
+
+
+
+
+
             <AdBoard />
             <div className="md:flex grid grid-cols-2 gap-1 md:space-x-5 mt-8 md:px-20">
               {myNews
@@ -242,7 +272,18 @@ const Homepage = (props) => {
               </div>
             </section>
           </div>
+
+
+          <section id="admin">
+                    <div id="login">
+                        <div>
+                          <h1>Login</h1>
+                        </div>
+                    </div>
+          </section>
           <Footer />
+
+          
         </div>
       ) : (
         <div>Loading</div>
